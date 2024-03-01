@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="headerHeads">
+        <h3>Гимназия №85 города Минска</h3>
+        <h4>Общеобразовательный портал</h4>
+      </div>
+
+      <div id="menu">
+        <button><h5>Главная</h5></button>
+        <button onclick="modal()"><h5>Ввести данные</h5></button>
+        <button onclick="formFunc('all')"><h5>Показать всё</h5></button>
+        <select name="showOne" id="showOne" onchange="optionFunc(value,'show')">
+          <option value="choose">Показать класс</option>
+        </select>
+        <select name="delete" id="delete" onchange="optionFunc(value,'delete')">
+          <option value="choose">Удалить класс</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <table>
+        <tr>
+          <th>№ класса</th>
+          <th>Кол-во учащихся</th>
+          <th>Телефон</th>
+          <th>ФИО классного руководителя</th>
+        </tr>
+        <tr></tr>
+      </table>
+    </main>
+    <aside id="formCont">
+      <div id="form">
+        <div id="closeCont">
+          <button id="x" onclick="modalClose()">x</button>
+        </div>
+        <div id="inputCont">
+          <div class="inpPlusLabel">
+            <label for="num">№ класса</label>
+            <input type="text" name="num" id="num" />
+          </div>
+          <div class="inpPlusLabel">
+            <label for="quant">Кол-во учащихся</label>
+            <input type="number" name="quant" id="quant" />
+          </div>
+
+          <div class="inpPlusLabel">
+            <label for="phone">Телефон</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+
+          <div class="inpPlusLabel">
+            <label for="classDirector">ФИО классного руководителя</label>
+            <input type="text" name="classDirector" id="classDirector" />
+          </div>
+        </div>
+
+        <div id="btnSend">
+          <button onclick="formFunc('send')">
+            <div>Отправить</div>
+          </button>
+          <button onclick="formFunc('reset')">Очистить форму</button>
+        </div>
+      </div>
+    </aside>
+    <footer></footer>
+  </body>
+  <script src="https://s3.amazonaws.com/builds.handlebarsjs.com/handlebars-v4.7.8.js"></script>
+  <script src="scriptRedone.js"></script>
+  <script src="modals.js"></script>
+</html>

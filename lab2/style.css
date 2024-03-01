@@ -1,0 +1,158 @@
+html{
+    width: 100%;
+    height: 100%;
+    
+}
+body{
+    width: 100%;
+    min-height: 500px;
+   background-color: rgb(230, 230, 230);
+    margin: 0;
+    
+}
+
+body,button,label{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
+header{
+    width: 100%;
+    height: 85px;
+    /*position: absolute;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(133, 133, 133, 0.089);
+}
+header button{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0cap;
+    font-size: 15px;
+}
+header button{
+    
+    transition: 500ms;
+}
+#headerHeads{
+    padding: 35px;
+}
+#headerHeads h3,h4,h5{
+    padding: 0px;
+    margin: 0;
+}
+header button:hover{
+    background: radial-gradient(rgba(0, 0, 255, 0.18),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+    border: 0cap;
+    transition: 500ms;
+    color: rgba(0, 0, 28, 0.775);
+}
+header button:active{
+    border-bottom: 1px solid brown;
+    background: none;
+    
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+#menu{
+    padding-right: 30px;
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+ 
+}
+#menu button, select,option{
+    width: 200px;
+    padding: 0%;
+}
+select{
+    border: 1px solid rgb(220, 220, 220);
+    font-weight: 600;
+    
+    background-color: rgba(240, 248, 255, 0);
+}
+footer{
+    width: 100%;
+    /*position: absolute;*/
+    height: 8%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(73, 73, 73, 0.65);
+}
+table{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 90%;
+}
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+td p{
+    width: 100%;
+    text-align: justify;
+    margin-left: 5px;
+}
+aside{
+    position: unset;
+    
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#closeCont{
+   display: flex;
+   justify-content: flex-end;
+   height: 20px;
+   width: 100%;
+}
+#form{
+    padding: 15px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+/*#inputCont{
+    margin-top: -20px;
+}*/
+#form input{
+    border: 0;
+    border-bottom: 1px solid black;
+}
+#inputCont{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.inpPlusLabel{
+    display: flex;
+    margin-top: 5px;
+margin-bottom: 5px;
+}
+label,input{
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    width: 55%;
+}
+#x{
+    border: 0;
+    background-color: rgba(240, 248, 255, 0);
+}
+label{
+    font-weight: 400;
+}
+
